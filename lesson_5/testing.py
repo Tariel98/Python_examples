@@ -9,6 +9,7 @@ def pangram_cheker(my_str):
 		print('Pangram che')
 
 
-my_str = 'Sphinx of black, quartz; judge my vow.'
-
+my_str = input("Enter your text: ")
 pangram_cheker(my_str)
+
+
