@@ -15,34 +15,29 @@ odd_nums = generate_odd_nums()
 for x in odd_nums:
 	print(x)
 
+# unfinished business
 
 class Number:
 	
-	def __init__(self, number):
+	def __init__(self, number, mode="odd" ):
 		self.number = number
+		self.mode = mode
 
-	def odd_number(self):
+	def result_list(self):
 		my_odd_list  = []
+		my_env_list = []
+
 		for x in range(self.number):
-			if x % 2 == 0:
-				my_odd_list.append(x)
-#			else:
-#				continue
+			if self.mode == "odd":
+				if x % 2 == 0:
+					my_odd_list.append(x)
+			elif self.mode == "evn":
+				my_env_list.append(x)
+
 		return my_odd_list
 
-	def env_number(self):
-		my_env_list = []
-		for x in range(self.number):
-			if x % 2 != 0:
-				my_env_list.append(x)
-#			else:
-#				continue
-		return my_env_list
 
-	def __del__(self):
 
 odd = Number(50)
 print(odd.odd_number())
 print(odd.env_number())
-=======
->>>>>>> Stashed changes
