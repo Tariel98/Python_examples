@@ -9,6 +9,7 @@ def generate_odd_nums():
 def print_hello():
 	print("Hello")
 
+
 odd_nums = generate_odd_nums()
 
 for x in odd_nums:
@@ -43,3 +44,5 @@ class Number:
 odd = Number(50)
 print(odd.odd_number())
 print(odd.env_number())
+=======
+>>>>>>> Stashed changes
