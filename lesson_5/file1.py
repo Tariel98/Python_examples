@@ -6,7 +6,8 @@ def generate_odd_nums():
 		if i % 2 != 0:
 			yield i
 
-
+def print_hello():
+	print("Hello")
 
 odd_nums = generate_odd_nums()
 
