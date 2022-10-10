@@ -10,7 +10,6 @@ def print_hello():
 	print("Hello")
 
 
-odd_nums = generate_odd_nums()
 
 for x in odd_nums:
 	print(x)
